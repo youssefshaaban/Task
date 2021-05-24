@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">TaskJobs</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="welcome">Welcome to Mega Trust Jobs.</string>
+    <string name="start">Start</string>
+  <string name="search">Search</string>
+</resources>

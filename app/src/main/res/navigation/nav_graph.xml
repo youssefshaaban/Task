@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    app:startDestination="@id/welcomeFragment"
+    android:id="@+id/nav_graph">
+
+    <fragment
+        android:id="@+id/welcomeFragment"
+        android:name="com.example.taskjobs.ui.WelcomFragment"
+        android:label="Blank"
+        tools:layout="@layout/fragment_welcom" >
+        <action
+            android:id="@+id/action_welcomeFragment_to_jobFragment"
+            app:destination="@id/jobFragment" />
+    </fragment>
+
+
+    <fragment
+        android:id="@+id/jobFragment"
+        android:name="com.example.taskjobs.ui.jobFragment.JobFragment"
+        android:label="Blank"
+        tools:layout="@layout/fragment_job" >
+        <action
+            android:id="@+id/action_jobFragment_to_detailFragment"
+            app:destination="@id/detailFragment" />
+    </fragment>
+
+
+    <fragment
+        android:id="@+id/detailFragment"
+        android:name="com.example.taskjobs.ui.DetailFragment"
+        android:label="Blank"
+        tools:layout="@layout/fragment_detail" />
+
+</navigation>
